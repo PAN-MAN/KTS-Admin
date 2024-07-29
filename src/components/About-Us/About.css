@@ -1,0 +1,104 @@
+.about-us-container {
+  background-color: rgba(0, 0, 0, 0); /* transparent background */
+  color: rgb(118, 118, 127); /* text color */
+  font-family: "Poppins", sans-serif; /* font family */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  max-width: 100%; /* Prevent container from exceeding screen width */
+}
+
+.about-us-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800; /* Make the text very bold */
+  font-size: 2rem; /* Base font size */
+  color: #000000;
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px;
+}
+
+.image-line-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 100%; /* Line takes the full width of its container */
+  height: 2px;
+  background-color: #2b3991; /* Line color */
+  margin-bottom: 20px; /* Space between the line and the image */
+}
+
+.img-fluid {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto; /* Maintains the aspect ratio of the image */
+  margin-bottom: 20px;
+}
+
+.about-us-container p {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.brochure {
+  margin-top: 20px;
+  text-align: left; /* Ensure the brochure link is left-aligned */
+}
+
+.btn-download {
+  background-color: #2b3991;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-download:hover {
+  background-color: #2b3991;
+}
+
+/* Media Queries for responsiveness */
+
+/* Mobile L (425px and up) */
+@media (min-width: 425px) {
+  .about-us-heading {
+    font-size: 2.2rem; /* Slightly larger text for Mobile L */
+  }
+}
+
+@media (max-width: 320px) {
+  .brochure {
+    text-align: center;
+  }
+
+  .btn-download {
+    font-size: 15px;
+  }
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .about-us-heading {
+    font-size: 2.5rem; /* Larger text for medium screens */
+    text-align: left; /* Align text to the left for larger screens */
+    padding-left: 20px; /* Add some padding for larger screens */
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .about-us-heading {
+    font-size: 3rem; /* Larger text for large screens */
+    padding-left: 255px; /* Restore padding for large screens */
+  }
+
+  .about-us-container {
+    max-width: 1200px; /* Limit the width for better readability on large screens */
+    margin: auto; /* Center the container */
+  }
+}

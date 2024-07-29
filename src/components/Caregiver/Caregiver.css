@@ -1,0 +1,214 @@
+.caregiver-course-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 100px;
+}
+
+.caregiver-course-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caregiver-course-details {
+  padding: 20px;
+}
+
+.caregiver-course-details h1 {
+  font-size: 75px;
+  font-weight: bolder;
+  color: #313d87;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.caregiver-course-description {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #313d87;
+  text-align: justify;
+}
+
+.caregiver-download-button {
+  background-color: #313d87;
+}
+
+.caregiver-underline {
+  width: 550px;
+  height: 7px;
+  background-color: #fea92c;
+  margin: -10px 0 20px 5px; /* Adjust margins as needed */
+}
+
+.caregiver-certificate {
+  color: black;
+  background-color: #f9f9f9;
+  line-height: 2;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  text-align: justify;
+}
+
+.caregiver-card-row {
+  margin-top: 40px;
+  margin-left: 0px;
+}
+
+.caregiver-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caregiver-card-body {
+  padding: 20px;
+}
+
+.caregiver-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #313d87;
+}
+
+.caregiver-divider {
+  border: 1px solid #fea92c;
+  width: 50px;
+  margin: 10px 0;
+}
+
+.caregiver-card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.caregiver-card-text ul {
+  list-style-type: disc; /* Bullet points (•) */
+  padding-left: 20px; /* Indent the list */
+}
+
+.caregiver-card-text li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Mobile L (<= 425px) */
+@media (max-width: 425px) {
+  .caregiver-course-details h1 {
+    font-size: 50px;
+  }
+
+  .caregiver-course-description {
+    font-size: 1rem;
+  }
+
+  .caregiver-underline {
+    width: 290px;
+    height: 3px;
+  }
+
+  .caregiver-card-title {
+    font-size: 20px;
+  }
+
+  .caregiver-card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile M (<= 375px) */
+@media (max-width: 375px) {
+  .caregiver-course-details h1 {
+    font-size: 40px;
+  }
+
+  .caregiver-course-description {
+    font-size: 0.9rem;
+  }
+
+  .caregiver-underline {
+    width: 225px;
+    height: 2px;
+  }
+
+  .caregiver-card-title {
+    font-size: 18px;
+  }
+
+  .caregiver-card-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile S (<= 320px) */
+@media (max-width: 320px) {
+  .caregiver-course-details h1 {
+    font-size: 30px;
+  }
+
+  .caregiver-course-description {
+    font-size: 0.8rem;
+  }
+
+  .caregiver-underline {
+    width: 200px;
+    height: 2px;
+  }
+
+  .caregiver-card-title {
+    font-size: 16px;
+  }
+
+  .caregiver-card-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet (<= 768px) */
+@media (max-width: 768px) {
+  .caregiver-course-details h1 {
+    font-size: 40px;
+  }
+
+  .caregiver-course-description {
+    font-size: 1rem;
+  }
+
+  .caregiver-underline {
+    width: 250px;
+    height: 4px;
+  }
+}
+
+/* Laptop (<= 1024px) */
+@media (max-width: 1024px) {
+  .caregiver-course-details h1 {
+    font-size: 55px;
+  }
+
+  .caregiver-course-description {
+    font-size: 1.1rem;
+  }
+
+  .caregiver-underline {
+    width: 270px;
+    height: 5px;
+  }
+}
+
+/* Laptop (<= 1440px) */
+@media (max-width: 1440px) {
+  .caregiver-course-details h1 {
+    font-size: 65px;
+  }
+
+  .caregiver-course-description {
+    font-size: 1.15rem;
+  }
+
+  .caregiver-underline {
+    width: 290px;
+    height: 6px;
+  }
+}

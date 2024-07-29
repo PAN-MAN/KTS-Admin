@@ -1,0 +1,97 @@
+.quote-section {
+  background-color: #2b3991; /* Blue background color */
+  color: white; /* White text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Height of the quote section */
+  padding: 20px; /* Padding around the section */
+}
+
+.quote-container {
+  max-width: 80%; /* Max width of the container */
+  text-align: center;
+  position: relative; /* Position relative to place the icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-text {
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-size: 28px; /* Font size */
+  font-weight: 300; /* Font weight */
+  font-style: italic; /* Italic style */
+  margin: 0; /* Remove default margin */
+  color: white; /* Text color */
+}
+
+.quote-icon-left {
+  position: absolute;
+  top: -45px; /* Adjust position to the top left */
+  left: -70px; /* Adjust position to the left */
+  font-size: 3rem; /* Set a larger font size for the icons */
+  color: #f7a721; /* Color of the quote icons */
+}
+
+.quote-icon-right {
+  position: absolute;
+  bottom: -40px; /* Adjust position to the bottom right */
+  right: -5px; /* Adjust position to the right */
+  font-size: 3rem; /* Set a larger font size for the icons */
+  color: #f7a721; /* Color of the quote icons */
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .quote-section {
+    height: auto; /* Adjust height for tablets */
+    padding: 15px; /* Adjust padding for tablets */
+  }
+
+  .quote-text {
+    font-size: 22px; /* Adjust font size for tablets */
+  }
+
+  .quote-icon-left,
+  .quote-icon-right {
+    font-size: 2rem; /* Adjust icon size for tablets */
+  }
+
+  .quote-icon-left {
+    top: -25px; /* Adjust position for tablets */
+    left: -35px; /* Adjust position for tablets */
+  }
+
+  .quote-icon-right {
+    bottom: -35px; /* Adjust position for tablets */
+    right: -10px; /* Adjust position for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .quote-section {
+    height: auto; /* Adjust height for mobile devices */
+    padding: 10px; /* Adjust padding for mobile devices */
+  }
+
+  .quote-text {
+    font-size: 18px; /* Adjust font size for mobile devices */
+  }
+
+  .quote-icon-left,
+  .quote-icon-right {
+    font-size: 1.5rem; /* Adjust icon size for mobile devices */
+  }
+
+  .quote-icon-left {
+    top: -15px; /* Adjust position for mobile devices */
+    left: -30px; /* Adjust position for mobile devices */
+  }
+
+  .quote-icon-right {
+    bottom: -15px; /* Adjust position for mobile devices */
+    right: -10px; /* Adjust position for mobile devices */
+  }
+}

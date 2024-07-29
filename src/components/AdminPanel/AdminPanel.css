@@ -1,0 +1,96 @@
+/* AdminPanel.css */
+
+.admin-panel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* Add Blog Form Styles */
+.add-blog-form {
+  margin-bottom: 40px;
+}
+
+.add-blog-form input,
+.add-blog-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-blog-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-blog-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Blog List Styles */
+.blog-list {
+  margin-top: 20px;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.blog-item h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.blog-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.blog-item button {
+  margin-left: auto;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blog-item button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,46 @@
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  overflow: hidden; /* Ensure no scrollbars during loading */
+  opacity: 0; /* Initially hide loading screen */
+  visibility: hidden; /* Initially hide loading screen */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.loading-screen.visible {
+  opacity: 1; /* Show loading screen */
+  visibility: visible; /* Show loading screen */
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loading-image {
+  width: 150px;
+  height: auto;
+  animation: scale 1.5s ease-in-out infinite;
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

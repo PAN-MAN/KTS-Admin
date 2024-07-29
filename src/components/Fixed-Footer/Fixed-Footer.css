@@ -1,0 +1,60 @@
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #2b3991;
+}
+
+.course-option {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  background-color: #2b3991;
+  border-right: 2px solid #000; /* Add a vertical border */
+}
+
+.course-option:last-child {
+  border-right: none; /* Remove the border from the last item */
+}
+
+.course-option:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .course-option {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .course-option {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-option {
+    font-size: 10px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-option {
+    font-size: 8px;
+    padding: 2px;
+  }
+}

@@ -1,0 +1,91 @@
+.photo-container {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.photo-container.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Prevent interaction during loading */
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  margin-top: 20px; /* Adjust margin as needed */
+  padding: 15px;
+}
+
+.photo-wrapper {
+  width: 25%; /* Default width for larger screens */
+  text-align: center;
+  margin-bottom: 20px; /* Adjust margin between rows */
+}
+
+.photo {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+.name {
+  color: black;
+  text-align: center;
+  margin-top: 5px; /* Adjust as needed */
+}
+
+.one-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.photo-binod,
+.photo-pasang,
+.photo-nisha,
+.photo-gyanu,
+.photo-jasmi,
+.photo-sushma,
+.photo-shanti {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+.photo-shanti {
+  width: 175px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .photo-wrapper {
+    width: 33.33%; /* 3 images per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-wrapper {
+    width: 50%; /* 2 images per row */
+  }
+
+  .photo {
+    object-fit: cover;
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-wrapper {
+    width: 100%; /* 1 image per row */
+  }
+
+  .photo {
+    object-fit: cover;
+    height: 200px;
+    width: auto;
+  }
+}

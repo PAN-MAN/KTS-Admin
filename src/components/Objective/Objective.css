@@ -1,0 +1,53 @@
+/* src/ObjectiveAndWhatWeDo.css */
+.container {
+  margin-top: 20px;
+}
+
+.objective-section,
+.what-we-do-section {
+  position: relative;
+  background-size: cover;
+  color: white;
+  padding: 40px;
+}
+
+.objective-section {
+  background-image: url("../../img/garden.jpeg");
+}
+
+.what-we-do-section {
+  background-image: url("../../img/classroom.jpg");
+}
+
+.overlay {
+  background-color: rgba(0, 0, 50, 0.7);
+  padding: 20px;
+}
+
+.objective-section .overlay p,
+.what-we-do-section .overlay ul,
+.what-we-do-section .overlay li {
+  color: white; /* Ensures all text inside the overlay is white */
+}
+
+h2 {
+  color: #fca311;
+}
+
+.objective-section ul,
+.what-we-do-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.objective-section ul li,
+.what-we-do-section ul li {
+  margin-bottom: 10px;
+}
+
+.objective-section ul li:before,
+.what-we-do-section ul li:before {
+  content: "•";
+  color: #fca311;
+  padding-right: 10px;
+}

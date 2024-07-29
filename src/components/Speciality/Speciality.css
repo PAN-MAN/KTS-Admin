@@ -1,0 +1,74 @@
+.text-center-header {
+  color: #26262c; /* RGB(38, 38, 44) */
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+h3 {
+  color: #2b3991; /* RGB(43, 57, 145) */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.unique-speciality p {
+  color: #76767f; /* RGB(118, 118, 127) */
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 2;
+}
+
+.speciality-item {
+  margin-bottom: 20px;
+}
+
+.speciality-item h4 {
+  font-weight: bold;
+}
+
+.speciality-images img {
+  border: 5px solid #fbb040; /* Adjust the border color and size as needed */
+}
+
+@media (max-width: 768px) {
+  .text-center-header {
+    font-size: 32px; /* Adjust font size for tablets */
+  }
+
+  h3 {
+    font-size: 20px; /* Adjust font size for tablets */
+  }
+
+  .unique-speciality p {
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+
+  .speciality-images img {
+    margin-bottom: 20px; /* Add space between images for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .text-center-header {
+    font-size: 28px; /* Adjust font size for mobile devices */
+    text-align: center; /* Center align for mobile */
+  }
+
+  h3 {
+    font-size: 22px; /* Adjust font size for mobile devices */
+  }
+
+  .unique-speciality p {
+    font-size: 18px; /* Adjust font size for mobile devices */
+  }
+
+  .speciality-images img {
+    margin-bottom: 15px; /* Add space between images for mobile */
+  }
+}

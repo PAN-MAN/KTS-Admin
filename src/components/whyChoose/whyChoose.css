@@ -1,0 +1,166 @@
+/* Base styles */
+.whyChoose-container {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(118, 118, 127);
+  font-family: "Poppins", sans-serif;
+  padding: 20px 0;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.why-us-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #000000;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  text-align: start;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.whyChoose-line-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.whyChoose-line-wrapper .line {
+  width: 100%;
+  height: 2px;
+  background-color: #2b3991;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.img-fluid {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.whyChoose-container h2 {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.whyChoose-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: justify;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.icon-text-spacing {
+  margin-left: 15px;
+}
+
+/* Media Queries for responsiveness */
+
+/* Mobile L (425px and up) */
+@media (min-width: 425px) {
+  .why-us-heading {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .why-us-heading {
+    font-size: 2.5rem;
+  }
+
+  .whyChoose-container p {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 320px) {
+  .why-us-heading {
+    font-size: 2.2rem;
+  }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .why-us-heading {
+    font-size: 3rem;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .whyChoose-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+/* Additional styles for the icon text */
+.whyChoose-container h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .whyChoose-container h5 {
+    font-size: 18px;
+  }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+/* Ensure content alignment */
+.whyChoose-container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.whyChoose-container .col-md-6,
+.whyChoose-container .col-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}

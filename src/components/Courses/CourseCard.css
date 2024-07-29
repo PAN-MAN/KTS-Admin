@@ -1,0 +1,63 @@
+.card-img-top {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card-img-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center; /* Centers the text and button horizontally */
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+.card-body p {
+  margin-bottom: 20px;
+}
+
+.bg-primary {
+  background-color: #2b3991 !important;
+}
+
+.course-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  background-color: #f39b33;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; /* If it's an <a> tag */
+}
+
+.course-button:hover {
+  background-color: #e0891f;
+  transform: translateY(-2px);
+}
+
+.course-button:active {
+  background-color: #c3761a;
+  transform: translateY(0);
+}

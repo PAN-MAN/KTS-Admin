@@ -1,0 +1,199 @@
+/* Base styles for the footer */
+.footer {
+  margin-top: 20px;
+  position: relative;
+  background-color: #f2f2f2; /* Optional background color */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.col-md-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.fs-5 {
+  font-size: 1rem; /* Adjust font size if needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.phone,
+.fas.fa-envelope,
+.fas.fa-map-marker-alt {
+  color: #2b3991; /* Color for contact icons */
+}
+
+.phone a,
+.fas.fa-envelope a {
+  color: black; /* Text color for contact details */
+}
+
+/* Styles for navigation links */
+.navi-link {
+  color: #2b3991; /* Text color for navigation links */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease-in-out; /* Add hover effect */
+}
+
+.navi-link:hover {
+  color: #000; /* Change color on hover */
+}
+
+/* Styles for copyright and link at the bottom */
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  color: #2b3991; /* Text color for footer link */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out; /* Add hover effect */
+}
+
+.footer-link:hover {
+  color: black; /* Change color on hover */
+}
+
+.unique-name {
+  text-decoration: none;
+  color: #2b3991;
+}
+
+/* Styles for "Scroll to Top" button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: #2b3991;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-to-top:hover {
+  opacity: 0.8;
+}
+
+.scroll-to-top svg {
+  width: 40px;
+  height: 40px;
+}
+
+.scroll-to-top-text {
+  margin-top: 5px; /* Adjust spacing between icon and text */
+  font-size: 12px; /* Adjust font size for text */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Adjust bottom margin for contact details */
+.contact-details .fs-5 {
+  margin-bottom: 15px; /* Adjust as needed for bottom gaps */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .contact-details {
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .fs-5 {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
+  }
+
+  .navi-link {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    margin: 0 5px; /* Adjust margin for smaller screens */
+  }
+
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
+  .footer {
+    padding: 5px;
+  }
+
+  .fs-5 {
+    font-size: 0.8rem; /* Further adjust font size for very small screens */
+    margin-bottom: 5px; /* Further adjust margin for very small screens */
+  }
+
+  .navi-link {
+    font-size: 0.7rem; /* Further adjust font size for very small screens */
+    margin: 0 3px; /* Further adjust margin for very small screens */
+  }
+
+  .container {
+    padding: 5px; /* Further adjust padding for very small screens */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+  .footer {
+    padding: 3px;
+  }
+
+  .contact-details {
+    margin-bottom: 10px; /* Further adjust margin for very small screens */
+  }
+
+  .fs-5 {
+    font-size: 0.6rem; /* Further adjust font size for very small screens */
+    margin-bottom: 2px; /* Further adjust margin for very small screens */
+  }
+
+  .navi-link {
+    font-size: 0.55rem; /* Further adjust font size for very small screens */
+    margin: 0 1px; /* Further adjust margin for very small screens */
+  }
+
+  .container {
+    padding: 3px; /* Further adjust padding for very small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .fs-5 {
+    font-size: 0.5rem; /* Further adjust font size for the smallest screens */
+    margin-bottom: 2px; /* Further adjust margin for the smallest screens */
+  }
+
+  .navi-link {
+    display: none;
+    /* font-size: 0.5rem; Further adjust font size for the smallest screens */
+    /* margin: 0 1px; Further adjust margin for the smallest screens */
+  }
+
+  .container {
+    padding: 3px; /* Further adjust padding for the smallest screens */
+  }
+}

@@ -1,0 +1,84 @@
+/* src/ObjectiveAndWhatWeDo.module.css */
+.container {
+  margin-top: 20px;
+}
+
+.objectiveSection,
+.whatWeDoSection {
+  position: relative;
+  background-size: cover;
+  color: white;
+  padding: 40px;
+  min-height: 300px; /* Ensure minimum height */
+}
+
+.objectiveSection {
+  background-image: url("../../img/garden.jpeg");
+}
+
+.whatWeDoSection {
+  background-image: url("../../img/classroom.jpg");
+}
+
+.overlay {
+  background-color: rgba(0, 0, 50, 0.7);
+  padding: 20px;
+}
+
+.objectiveSection .overlay p,
+.whatWeDoSection .overlay ul,
+.whatWeDoSection .overlay li {
+  color: white;
+}
+
+h2 {
+  color: #fca311;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .objectiveSection,
+  .whatWeDoSection {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust font size for tablets */
+  }
+
+  .overlay p,
+  .overlay ul,
+  .overlay li {
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .objectiveSection,
+  .whatWeDoSection {
+    padding: 10px;
+    min-height: 250px; /* Adjust minimum height for mobile */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjust font size for mobile devices */
+  }
+
+  .overlay p,
+  .overlay ul,
+  .overlay li {
+    font-size: 14px; /* Adjust font size for mobile devices */
+  }
+
+  .row {
+    flex-direction: column; /* Stack sections vertically on mobile */
+  }
+}

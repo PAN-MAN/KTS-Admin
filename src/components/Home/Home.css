@@ -1,0 +1,12 @@
+/* Home.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.home {
+  width: 100vw;
+  height: 100vh; /* Set the container to fill the entire viewport */
+}

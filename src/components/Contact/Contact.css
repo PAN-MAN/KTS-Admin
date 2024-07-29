@@ -1,0 +1,7 @@
+.register-here {
+  background-color: #2b3991;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

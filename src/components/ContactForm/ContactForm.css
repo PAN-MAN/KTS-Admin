@@ -1,0 +1,151 @@
+.contact-form-container {
+  padding: 50px 20px;
+  background-color: #2b3991;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.msg {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+  padding-right: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-info h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-detail p {
+  color: white;
+  margin: 0;
+}
+
+.contact-detail div p:first-child {
+  color: #f0ad4e; /* Orange color for labels */
+}
+
+form h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.form-group label {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.form-group label::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+.form-group input {
+  margin-bottom: 20px;
+  padding: 8px; /* Adjust the padding to make the input box smaller */
+  font-size: 1rem;
+  border-radius: 3px; /* Remove rounded corners */
+  width: 80%;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 80%;
+}
+
+.select-wrapper select {
+  margin-bottom: 20px;
+  padding: 8px; /* Adjust the padding to make the select box smaller */
+  font-size: 1rem;
+  border-radius: 3px; /* Remove rounded corners */
+  width: 100%;
+  appearance: none; /* Remove default arrow in select */
+  background: white
+    url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMiAxNWw2LTZINmw2IDZ6Ii8+PC9zdmc+")
+    no-repeat right 8px center;
+  background-size: 16px 16px;
+}
+
+.btn {
+  background-color: #f39b33;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+/* Prevent the background color from changing on hover, focus, and active states */
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #f39b33;
+  color: white; /* Ensure text color remains white */
+  border: none; /* Remove any borders */
+  outline: none; /* Remove the default focus outline */
+}
+
+.btn:active {
+  background-color: #f39b33 !important;
+  box-shadow: none; /* Remove any shadow that might appear when clicking */
+}
+
+.form-group select {
+  width: 50%;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .contact-info {
+    border-right: none; /* Remove right border on smaller screens */
+    padding-right: 0; /* Remove padding on smaller screens */
+  }
+
+  .contact-form-container .row {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%; /* Make input and select elements full width */
+  }
+
+  .select-wrapper {
+    width: 100%; /* Make select wrapper full width */
+  }
+
+  .btn {
+    width: 100%; /* Make button full width */
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info {
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+
+  .form-group label {
+    font-size: 1rem; /* Adjust label font size on smaller screens */
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 6px; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}

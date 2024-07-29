@@ -1,0 +1,60 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+.alumni-container {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.alumni-container.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Prevent interaction during loading */
+}
+
+.alumni-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.alumni-header {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #2b3991;
+}
+
+.year-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-section li {
+  font-size: x-large;
+  margin: 5px;
+  padding: 10px 10px;
+  color: #2b3991;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seventy {
+  text-decoration: none;
+  text-align: center;
+}
+
+.eighty {
+  text-decoration: none;
+  text-align: center;
+}

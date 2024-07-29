@@ -1,0 +1,139 @@
+.unique-barista-course-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 100px;
+}
+
+.unique-barista-course-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.unique-barista-course-details {
+  padding: 20px;
+}
+
+.unique-barista-course-details h1 {
+  font-size: 75px;
+  font-weight: bolder;
+  color: #2b3991;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.unique-barista-course-description {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2b3991;
+  text-align: justify;
+}
+
+.unique-barista-underline {
+  width: 300px;
+  height: 7px;
+  background-color: #fea92c;
+  margin: -10px 0 20px 5px; /* Adjust margins as needed */
+}
+
+.unique-barista-certificate {
+  color: black;
+  background-color: #f9f9f9;
+  line-height: 2;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .unique-barista-course-details h1 {
+    font-size: 50px;
+  }
+
+  .unique-barista-course-description {
+    font-size: 1rem;
+  }
+
+  .unique-barista-underline {
+    width: 330px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .unique-barista-course-details h1 {
+    font-size: 40px;
+  }
+
+  .unique-barista-course-description {
+    font-size: 0.9rem;
+  }
+
+  .unique-barista-underline {
+    width: 320px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .unique-barista-course-details h1 {
+    font-size: 50px;
+  }
+
+  .unique-barista-course-description {
+    font-size: 1rem;
+  }
+
+  .unique-barista-underline {
+    width: 330px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 425px) {
+  .unique-barista-course-details h1 {
+    font-size: 50px;
+  }
+
+  .unique-barista-course-description {
+    font-size: 1rem;
+  }
+
+  .unique-barista-underline {
+    width: 290px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 375px) {
+  .unique-barista-course-details h1 {
+    font-size: 20px;
+  }
+
+  .unique-barista-course-description {
+    font-size: 0.6rem;
+  }
+
+  .unique-barista-underline {
+    width: 225px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .unique-barista-course-details h1 {
+    font-size: 40px;
+  }
+
+  .unique-barista-course-description {
+    font-size: 1rem;
+  }
+
+  .unique-barista-underline {
+    width: 225px;
+    height: 2px;
+  }
+}
